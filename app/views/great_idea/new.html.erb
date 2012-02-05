@@ -1,0 +1,18 @@
+<%= form_for(GreatIdea.new , url: {controller: :great_idea, action: :create}) do |f| %>
+
+<div>
+  <%= f.label :title %><br />
+  <%= f.text_field :title %>
+</div>
+<div>
+  <%= f.label :body %><br />
+  <%= f.text_field :body %>
+</div>
+<div>
+  <%= f.label :date %><br />
+  <%= f.date_select :date %>
+</div>
+
+<%= f.submit %>
+
+<% end %>
